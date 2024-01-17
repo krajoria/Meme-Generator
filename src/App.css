@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+    background-color: #fff5f5;  
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #ea1b00 1.18%, #138a4a 100%);
+    color: white;
+    padding: 20px;
+}
+
+.header--image {
+    height: 100%;
+    margin-right: 6px;
+}
+
+.header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
+}
+
+.header--project {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin: 20px 20px;  
+    /* border: 1px solid rgb(255, 2, 213);   */
+}
+
+.form--input, .img--input{
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(206 198 198);
+}
+
+.image-height-input-form, .image-width-input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-height-input-form > input, .image-width-input-form > input{
+    padding: 10px;
+}
+
+.form-button-container{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form--button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ea1b00 1.18%, #138a4a 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.meme-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meme {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    box-shadow: 0px 0px 5px gray;
+}
+
+/* .meme--image {
+    border: 1px solid red;
+} */
+
+.meme--text{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    /* border: 1px solid blue; */
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+    cursor: grabbing;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.download--button{
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ea1b00 1.18%, #138a4a 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 18px;
+    width: 20%;
+    padding: 5px;
+}
